@@ -1,0 +1,22 @@
+{
+  "name": "vendor/propel",
+  "description": "test and explore propel orm and your resources",
+  "license": "MTI",
+  "autoload": {
+    "psr-4": {
+      "PropelOrm\\": "src/"
+    },
+    "classmap": [
+      "generated-classes/"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Antonio Gabriel",
+      "email": "antoniocamposgabriel@gmail.com"
+    }
+  ],
+  "require": {
+    "propel/propel": "~2.0@dev"
+  }
+}

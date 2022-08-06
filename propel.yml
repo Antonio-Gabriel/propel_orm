@@ -1,0 +1,24 @@
+propel:
+  paths:
+    schemaDir: 'schema'
+  database:
+    connections:
+      bookstore:
+        adapter: mysql
+        settings:
+          charset: utf8mb4
+          queries:
+            utf8: 'SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci, COLLATION_CONNECTION = utf8mb4_unicode_ci, COLLATION_DATABASE = utf8mb4_unicode_ci, COLLATION_SERVER = utf8mb4_unicode_ci'
+        classname: Propel\Runtime\Connection\ConnectionWrapper
+        dsn: 'mysql:host=127.0.0.1;dbname=bookstore'
+        user: 'root'
+        password: ''
+        attributes:
+  runtime:
+    defaultConnection: bookstore
+    connections:
+      - bookstore
+  generator:
+    defaultConnection: bookstore
+    connections:
+      - bookstore
